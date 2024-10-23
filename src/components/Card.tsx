@@ -1,6 +1,9 @@
+import { twMerge } from 'tailwind-merge'
+
 interface CardProps {
     src: string
     cardText: CardText
+    className?: string
 }
 
 interface CardText {
@@ -9,9 +12,14 @@ interface CardText {
     canvasSize: string
 }
 
-const Card = ({ src, cardText }: CardProps) => {
+const Card = ({ src, cardText, className }: CardProps) => {
+    const mergedClassNames = twMerge(
+        'relative flex h-[345px] w-[280px] items-center justify-center',
+        className
+    )
+
     return (
-        <div className="relative flex h-[345px] w-[280px] items-center justify-center">
+        <div className={mergedClassNames}>
             <img
                 className="absolute left-0 top-0"
                 src="images/frame_left.svg"

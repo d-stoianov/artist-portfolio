@@ -1,3 +1,4 @@
+import Button from '@/components/Button'
 import Card from '@/components/Card'
 import Header from '@/components/Header'
 import ShowCase from '@/components/Showcase'
@@ -7,9 +8,9 @@ const Home = () => {
     const { t } = useTranslation()
 
     return (
-        <div className="bg-dark-gray mx-auto h-full min-h-screen w-full max-w-[100%] px-4 py-[2rem] lg:max-w-screen-lg lg:px-[6rem]">
+        <div className="bg-dark-gray mx-auto h-full min-h-screen w-full max-w-[100%] px-4 py-[2rem] lg:max-w-screen-lg md:px-[6rem]">
             <Header />
-            <main className="grid flex-1 grid-cols-1 gap-[8rem] py-[2.5rem] md:grid-cols-2">
+            <main className="grid flex-1 grid-cols-1 gap-[6rem] pt-[2.5rem] md:grid-cols-2">
                 <div className="flex flex-col">
                     <div>
                         <h1 className="text-primary font-vollkorn text-[3rem]">
@@ -18,9 +19,9 @@ const Home = () => {
                         <p className="text-primary font-comfortaa w-[18rem] text-[0.875rem]">
                             {t('artistSubtitle')}
                         </p>
-                        <button className="font-comfortaa text-primary border-primary mt-[2.5rem] h-[30px] w-[130px] border text-center leading-none">
+                        <Button className="my-[2.5rem]">
                             {t('allArtworks')}
-                        </button>
+                        </Button>
                     </div>
                     <ShowCase title={t('waterColor')} />
                     <div className="mt-[5rem] flex flex-col items-center gap-10">
@@ -51,8 +52,10 @@ const Home = () => {
                             }}
                         />
                     </div>
-                    <ShowCase title={t('oilPaints')} />
-                    <ShowCase title={t('drawing')} />
+                    <div className="mt-[8rem] flex flex-col gap-[4.5rem]">
+                        <ShowCase title={t('oilPaints')} />
+                        <ShowCase title={t('drawing')} />
+                    </div>
                 </div>
             </main>
         </div>

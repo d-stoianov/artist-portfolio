@@ -1,14 +1,21 @@
 import { ReactNode } from 'react'
+import { twMerge } from 'tailwind-merge'
 
 const Button = ({
     children,
+    className,
     ...props
-}: React.ButtonHTMLAttributes<HTMLButtonElement> & { children: ReactNode }) => {
+}: React.ButtonHTMLAttributes<HTMLButtonElement> & {
+    children: ReactNode
+    className?: string
+}) => {
+    const mergedClassNames = twMerge(
+        'font-comfortaa text-primary border-primary border px-6 py-2 text-center leading-none',
+        className
+    )
+
     return (
-        <button
-            className="font-comfortaa text-primary border-primary border px-6 py-2 text-center leading-none"
-            {...props}
-        >
+        <button className={mergedClassNames} {...props}>
             {children}
         </button>
     )

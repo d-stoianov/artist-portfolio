@@ -1,9 +1,16 @@
 import { useTranslation } from 'react-i18next'
 
-const ShowCase = ({ title }: { title: string }) => {
+const ShowCase = ({
+    title,
+    className,
+}: {
+    title: string
+    className?: string
+}) => {
     const { t } = useTranslation()
+
     return (
-        <div className="mt-[5rem]">
+        <div className={className}>
             <div className="flex w-full items-center gap-[8rem]">
                 <h2 className="text-primary font-vollkorn text-[1.5rem]">
                     {title}
