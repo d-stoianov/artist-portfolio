@@ -1,3 +1,4 @@
+import Link from '@/components/Link'
 import { useTranslation } from 'react-i18next'
 
 const ShowCase = ({
@@ -15,12 +16,12 @@ const ShowCase = ({
                 <h2 className="text-primary font-vollkorn text-[1.5rem]">
                     {title}
                 </h2>
-                <a
-                    className="text-secondary font-comfortaa text-[1rem]"
-                    href=""
+                <Link
+                    className="no-underline"
+                    to=""
                 >
                     {t('more')} →
-                </a>
+                </Link>
             </div>
             <div className="mt-[1.5rem] flex gap-4">
                 <img src="images/img_2.png" />

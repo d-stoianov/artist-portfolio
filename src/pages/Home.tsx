@@ -8,15 +8,15 @@ const Home = () => {
     const { t } = useTranslation()
 
     return (
-        <div className="bg-dark-gray mx-auto h-full min-h-screen w-full max-w-[100%] px-4 py-[2rem] lg:max-w-screen-lg md:px-[6rem]">
+        <div className="bg-dark-gray mx-auto h-full min-h-screen w-full max-w-[100%] px-4 py-[2.25rem] md:max-w-[864px] md:px-[5rem]">
             <Header />
-            <main className="grid flex-1 grid-cols-1 gap-[6rem] pt-[2.5rem] md:grid-cols-2">
+            <main className="grid grid-cols-1 pt-[2.5rem] md:grid-cols-2">
                 <div className="flex flex-col">
                     <div>
                         <h1 className="text-primary font-vollkorn text-[3rem]">
                             {t('artistName')}
                         </h1>
-                        <p className="text-primary font-comfortaa w-[18rem] text-[0.875rem]">
+                        <p className="text-primary font-comfortaa w-[16rem] text-[0.875rem]">
                             {t('artistSubtitle')}
                         </p>
                         <Button className="my-[2.5rem]">
@@ -24,35 +24,35 @@ const Home = () => {
                         </Button>
                     </div>
                     <ShowCase title={t('waterColor')} />
-                    <div className="mt-[5rem] flex flex-col items-center gap-10">
-                        <p className="text-secondary font-comfortaa">
+                    <div className="mt-[5rem] flex flex-col items-center gap-[2.75rem] md:items-start">
+                        <p className="text-secondary font-comfortaa w-[20rem] text-[0.75rem]">
                             {t('firstCardText')}
                         </p>
                         <Card
                             src={'/images/img_1.png'}
                             cardText={{
-                                title: 'Русалка',
-                                details: 'масло, холст',
+                                title: t('mermaid'),
+                                details: t('oilPaintsAndCanvas'),
                                 canvasSize: '60x80',
                             }}
                         />
                     </div>
                 </div>
                 <div className="flex flex-col">
-                    <div className="flex flex-col items-center gap-10">
-                        <p className="text-secondary font-comfortaa">
+                    <div className="flex flex-col items-center gap-[1rem] md:items-start">
+                        <p className="text-secondary font-comfortaa w-[16rem] text-[0.75rem]">
                             {t('secondCardText')}
                         </p>
                         <Card
                             src={'/images/img_1.png'}
                             cardText={{
-                                title: 'Русалка',
-                                details: 'масло, холст',
+                                title: t('mermaid'),
+                                details: t('oilPaintsAndCanvas'),
                                 canvasSize: '60x80',
                             }}
                         />
                     </div>
-                    <div className="mt-[8rem] flex flex-col gap-[4.5rem]">
+                    <div className="mt-[6rem] flex flex-col gap-[4rem]">
                         <ShowCase title={t('oilPaints')} />
                         <ShowCase title={t('drawing')} />
                     </div>

@@ -10,7 +10,7 @@ const Button = ({
     className?: string
 }) => {
     const mergedClassNames = twMerge(
-        'font-comfortaa text-primary border-primary border px-6 py-2 text-center leading-none',
+        'font-comfortaa text-primary border-primary border text-[0.875rem] px-6 py-2 text-center leading-none',
         className
     )
 

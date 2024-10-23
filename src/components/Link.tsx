@@ -11,7 +11,7 @@ const Link = ({
     ...props
 }: ReactLinkProps & { children: ReactNode; className?: string }) => {
     const mergedClassNames = twMerge(
-        'font-comfortaa text-secondary underline',
+        'font-comfortaa text-secondary underline text-[0.75rem]',
         className
     )
 

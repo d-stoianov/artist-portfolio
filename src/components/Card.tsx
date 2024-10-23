@@ -19,7 +19,7 @@ const Card = ({ src, cardText, className }: CardProps) => {
     )
 
     return (
-        <div className={mergedClassNames}>
+        <div className={mergedClassNames    }>
             <img
                 className="absolute left-0 top-0"
                 src="images/frame_left.svg"
