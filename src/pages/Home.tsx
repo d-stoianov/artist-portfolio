@@ -8,7 +8,7 @@ const Home = () => {
     const { t } = useTranslation()
 
     return (
-        <div className="bg-dark-gray mx-auto h-full min-h-screen w-full max-w-[100%] px-4 py-[2.25rem] md:max-w-[864px] md:px-[5rem]">
+        <div className="bg-dark-gray yellow-radial-gradient mx-auto h-full min-h-screen w-full max-w-[100%] px-4 py-[2.25rem] md:max-w-[864px] md:px-[5rem]">
             <Header />
             <main className="grid grid-cols-1 pt-[2.5rem] md:grid-cols-2">
                 <div className="flex flex-col">

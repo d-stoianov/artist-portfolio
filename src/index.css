@@ -21,3 +21,12 @@ body,
 .fade-right {
     mask-image: linear-gradient(to left, transparent 50%, black 100%);
 }
+
+.yellow-radial-gradient {
+    background-color: #171717;
+    background-image: radial-gradient(
+        circle at top left,
+        rgba(255, 221, 152, 0.2),
+        rgba(255, 221, 152, 0) 30%
+    );
+}
