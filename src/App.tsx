@@ -1,11 +1,8 @@
+import router from '@/router'
+import { RouterProvider } from 'react-router-dom'
+
 const App = () => {
-    return (
-        <>
-            <h1 className="text-[1rem] font-bold text-red-500 underline">
-                testing tailwind
-            </h1>
-        </>
-    )
+    return <RouterProvider router={router} />
 }
 
 export default App
