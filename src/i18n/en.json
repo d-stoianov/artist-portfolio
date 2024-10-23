@@ -1,5 +1,13 @@
 {
-    "contacts": "contacts",
     "allArtworks": "all artworks",
-    "aboutMe": "about me"
+    "aboutMe": "about me",
+    "contacts": "contacts",
+    "artistName": "Iryna Bagachuk",
+    "artistSubtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis enim diam",
+    "firstCardText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis enim diam",
+    "more": "more",
+    "waterColor": "Watercolor",
+    "secondCardText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis enim diam",
+    "oilPaints": "Oil Paints",
+    "drawing": "Drawing"
 }
