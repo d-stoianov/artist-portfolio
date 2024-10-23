@@ -8,3 +8,13 @@
     --gray-color: #24201d;
     --dark-gray-color: #171717;
 }
+
+html,
+body,
+#root {
+    background-color: var(--gray-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
